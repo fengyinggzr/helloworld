@@ -40,6 +40,7 @@ public:
     //原始数据一共266240点，为4*66560，排列顺序为通道0第1点，通道1第1点，通道2第1点，通道3第1点，通道0第2点，通道1第2点，通道2第2点，通道3第2点，类推
     float *rawData;
     OutData outData[RAW_ONE_CHANNEL_COUNT / 4 + 256];
+    int dataBuff;
     bool extractRawData();
     bool demodulateLaserData();
 
